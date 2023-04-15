@@ -9,24 +9,79 @@ public class mainxo {
         Scanner scan = new Scanner(System.in);
         key = scan.nextInt();
         switch (key) {
-            case 7 ->
-                arr[0][0] = "X";
-            case 8 ->
-                arr[0][1] = "X";
-            case 9 ->
-                arr[0][2] = "X";
-            case 6 ->
-                arr[1][2] = "X";
-            case 5 ->
-                arr[1][1] = "X";
-            case 4 ->
-                arr[1][0] = "X";
-            case 1 ->
-                arr[2][0] = "X";
-            case 2 ->
-                arr[2][1] = "X";
-            case 3 ->
-                arr[2][2] = "X";
+            case 7 -> {
+                if ("|".equals(arr[0][0]) || arr[0][0]==null) {
+                    arr[0][0] = "X";
+                } else {
+                    System.out.println("The postion is already Taken");
+                    X_func(key, arr);
+                }
+            }
+            case 8 -> {
+                if ("|".equals(arr[0][1]) || arr[0][1]==null ) {
+                    arr[0][1] = "X";
+                } else {
+                    System.out.println("The postion is already Taken");
+                    X_func(key, arr);
+                }
+            }
+            case 9 ->{
+                if ("|".equals(arr[0][2]) || arr[0][2]==null ) {
+                    arr[0][2] = "X";
+                } else {
+                    System.out.println("The postion is already Taken");
+                    X_func(key, arr);
+                }
+            }
+            case 6 ->{
+                if ("|".equals(arr[1][2])|| arr[1][2]==null) {
+                    arr[1][2] = "X";
+                } else {
+                    System.out.println("The postion is already Taken");
+                    X_func(key, arr);
+                }
+            }
+            case 5 ->{
+                if ("|".equals(arr[1][1])|| arr[1][1]==null ) {
+                    arr[1][1] = "X";
+                } else {
+                    System.out.println("The postion is already Taken");
+                    X_func(key, arr);
+                }
+            }
+            case 4 ->{
+                if ("|".equals(arr[1][0]) || arr[1][0]==null) {
+                    arr[1][0] = "X";
+                } else {
+                    System.out.println("The postion is already Taken");
+                    X_func(key, arr);
+                }
+            }
+            case 1 ->{
+                if ("|".equals(arr[2][0]) || arr[2][0]==null) {
+                    arr[2][0] = "X";
+                } else {
+                    System.out.println("The postion is already Taken");
+                    X_func(key, arr);
+                }
+            }
+            case 2 ->{
+                if ("|".equals(arr[2][1]) || arr[2][1]==null) {
+                    arr[2][1] = "X";
+                } else {
+                    System.out.println("The postion is already Taken");
+                    X_func(key, arr);
+                }
+            }
+            case 3 ->{
+                if ("|".equals(arr[2][2]) || arr[2][2]==null) {
+                    arr[2][2] = "X";
+                } 
+                else {
+                    System.out.println("The postion is already Taken");
+                    X_func(key, arr);
+                }
+            }
             default ->
                 System.out.println("Wrong Input");
         }
@@ -38,24 +93,79 @@ public class mainxo {
         Scanner scan = new Scanner(System.in);
         key = scan.nextInt();
         switch (key) {
-            case 7 ->
-                arr[0][0] = "O";
-            case 8 ->
-                arr[0][1] = "O";
-            case 9 ->
-                arr[0][2] = "O";
-            case 6 ->
-                arr[1][2] = "O";
-            case 5 ->
-                arr[1][1] = "O";
-            case 4 ->
-                arr[1][0] = "O";
-            case 3 ->
-                arr[2][2] = "O";
-            case 2 ->
-                arr[2][1] = "O";
-            case 1 ->
-                arr[2][0] = "0";
+            case 7 -> {
+                if ("|".equals(arr[0][0]) || arr[0][0]==null) {
+                    arr[0][0] = "O";
+                } else {
+                    System.out.println("The postion is already Taken");
+                    O_func(key, arr);
+                }
+            }
+            case 8 -> {
+                if ("|".equals(arr[0][1]) || arr[0][1]==null ) {
+                    arr[0][1] = "O";
+                } else {
+                    System.out.println("The postion is already Taken");
+                    O_func(key, arr);
+                }
+            }
+            case 9 ->{
+                if ("|".equals(arr[0][2]) || arr[0][2]==null ) {
+                    arr[0][2] = "O";
+                } else {
+                    System.out.println("The postion is already Taken");
+                    O_func(key, arr);
+                }
+            }
+            case 6 ->{
+                if ("|".equals(arr[1][2])|| arr[1][2]==null) {
+                    arr[1][2] = "O";
+                } else {
+                    System.out.println("The postion is already Taken");
+                    O_func(key, arr);
+                }
+            }
+            case 5 ->{
+                if ("|".equals(arr[1][1])|| arr[1][1]==null ) {
+                    arr[1][1] = "O";
+                } else {
+                    System.out.println("The postion is already Taken");
+                    O_func(key, arr);
+                }
+            }
+            case 4 ->{
+                if ("|".equals(arr[1][0]) || arr[1][0]==null) {
+                    arr[1][0] = "O";
+                } else {
+                    System.out.println("The postion is already Taken");
+                    O_func(key, arr);
+                }
+            }
+            case 1 ->{
+                if ("|".equals(arr[2][0]) || arr[2][0]==null) {
+                    arr[2][0] = "O";
+                } else {
+                    System.out.println("The postion is already Taken");
+                    O_func(key, arr);
+                }
+            }
+            case 2 ->{
+                if ("|".equals(arr[2][1]) || arr[2][1]==null) {
+                    arr[2][1] = "O";
+                } else {
+                    System.out.println("The postion is already Taken");
+                    O_func(key, arr);
+                }
+            }
+            case 3 ->{
+                if ("|".equals(arr[2][2]) || arr[2][2]==null) {
+                    arr[2][2] = "O";
+                } 
+                else {
+                    System.out.println("The postion is already Taken");
+                    O_func(key, arr);
+                }
+            }
             default ->
                 System.out.println("Wrong Input");
         }
@@ -182,8 +292,10 @@ public class mainxo {
             display(arr);
             check_O(arr);
         }
-            X_func(key, arr);
-            display(arr);
-            check_X(arr);
+        X_func(key, arr);
+        display(arr);
+        check_X(arr);
+        System.out.println("ITS DRAW PLAY AGAIN !!!!");
     }
+    
 }
